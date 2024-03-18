@@ -11,7 +11,7 @@ import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Personal Homepage Profesional',
 };
 ---
 
@@ -25,8 +25,7 @@ const metadata = {
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/onwidget' },
-      ]}
+             ]}
       actions={[
         {
           text: 'Hire me',
@@ -42,13 +41,13 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
+    title="Adriana Quintero Lopez"
+    tagline="Contadora Publica U de Medellín,Colombia  Personal Web "
     actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
+      Profesional en contaduria Pública egresada de la Universidad de Medellin, Antioquia. <br /> With 15 years of experience and a degree
+      from  University's . I infuse vitality into brands and designs, transforming concepts into
       captivating realities.
     </Fragment>
   </Hero>
@@ -85,15 +84,19 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: 'https://i.postimg.cc/pLFJ80q0/adriana-rostro.jpg',
       alt: 'Colorful Image',
       loading: 'eager',
     }}
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <a href="https://www.youtube.com/shorts/emLN8uhCC20?feature=share">ver mi video de avatar IA -abre en otra ventana</a>
+ 
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
+        Bienvenidos a mi personal portfolio. Me dedico a la asesoria contable y tributaria de personas y medianas
+        empresas en Colombia Mis clientes tienen inversiones en otros paises. Asi se realiza la integracion de sus
+        balances generales globales. Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
         pixel becomes a brushstroke in the canvas of imagination.
       </p>
       <br />
@@ -118,7 +121,7 @@ const metadata = {
     items={[
       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
+          'Contadora Publica <br /> <span class="font-normal">Universidad de Medellin , Colombia..ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
         description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
         icon: 'tabler:briefcase',
       },
