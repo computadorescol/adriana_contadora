@@ -26,7 +26,7 @@ const metadata = {
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
-             ]}
+      ]}
       actions={[
         {
           text: 'Hire me',
@@ -37,32 +37,35 @@ const metadata = {
       showToggleTheme
     />
   </Fragment>
-
+  <!-- aqui es el chatbot -->
   <!-- Hero2 Widget ******************* -->
- <!-- aqui es el chatbot -->   
- <script type="text/javascript">
-    (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-          window.voiceflow.chat.load({
-            verify: { projectID: '65ecbe670cd125c54885d23d' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
-          });
-        }
-        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+
+  <script type="text/javascript">
+    (function (d, t) {
+      var v = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      v.onload = function () {
+        window.voiceflow.chat.load({
+          verify: { projectID: '65ecbe670cd125c54885d23d' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+        });
+      };
+      v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+      v.type = 'text/javascript';
+      s.parentNode.insertBefore(v, s);
     })(document, 'script');
   </script>
   <Hero
     id="hero"
     title="Adriana Quintero Lopez"
     tagline="Contadora Publica U de Medellín,Colombia  Personal Web "
-    actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
+    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      Profesional en contaduria Pública egresada de la Universidad de Medellin, Antioquia. <br /> With 15 years of experience and a degree
-      from  University's . I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      Profesional en contaduria Pública egresada de la Universidad de Medellin, Antioquia. <br /> With 15 years of experience
+      and a degree from University's . I infuse vitality into brands and designs, transforming concepts into captivating
+      realities.
     </Fragment>
   </Hero>
 
@@ -105,14 +108,24 @@ const metadata = {
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
-      <a href="https://www.youtube.com/shorts/emLN8uhCC20?feature=share">ver mi video de avatar IA -abre en otra ventana</a>
-      <iframe width="315" height="560" src="https://www.youtube.com/embed/emLN8uhCC20" title="adriana 30seg listo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      <a href="https://www.youtube.com/shorts/emLN8uhCC20?feature=share"
+        >ver mi video de avatar IA -abre en otra ventana</a
+      >
+      <iframe
+        width="315"
+        height="560"
+        src="https://www.youtube.com/embed/emLN8uhCC20"
+        title="adriana 30seg listo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      >
       </iframe>
       <p>
         Bienvenidos a mi personal portfolio. Me dedico a la asesoria contable y tributaria de personas y medianas
         empresas en Colombia Mis clientes tienen inversiones en otros paises. Asi se realiza la integracion de sus
-        balances generales globales. Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        balances generales globales. Welcome to my creative journey. My work is a testament to my commitment to bringing
+        ideas to life, where each pixel becomes a brushstroke in the canvas of imagination.
       </p>
       <br />
       <p>
@@ -402,11 +415,13 @@ const metadata = {
   <CallToAction
     title="Let's create together"
     subtitle="Ready to transform your vision into captivating designs?"
-    actions={[{
-      variant:"primary",
-      text: 'Hire me',
-      href: '/',
-    }]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
   />
 
   <!-- BlogLatestPost Widget **************** -->
