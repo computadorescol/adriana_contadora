@@ -36,7 +36,7 @@ const metadata = {
     <Fragment slot="title">
       Improve <span class="hidden sm:inline">the online presence of</span> your <span
         class="text-accent dark:text-white highlight">Startup</span
-      > with Astrowind templates
+      > with ComputadoresCol templates
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -50,6 +50,20 @@ const metadata = {
   </Hero>
 
   <!-- Features2 Widget ************** -->
+ <!-- aqui es el chatbot -->   
+ <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '65ecbe670cd125c54885d23d' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 
   <Features2
     title="About us"
